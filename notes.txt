@@ -13,7 +13,7 @@ I found this website:
 
     http://tharikasblogs.blogspot.com/p/how-to-write-simple-rpc-programme.html
 
-I copied his IDL.x file and then wrote this stupid Makefiles.
+I copied his IDL.x file and then wrote these stupid Makefiles.
 
 
 
