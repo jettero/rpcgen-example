@@ -9,6 +9,14 @@ Makefile(s). Note: I enjoy making Makefiles. rpcgen can generate a Makefile
 too -- that's probably the smarter choice if you really mean to use rpcgen
 for some reason.
 
+I found this website:
+
+    http://tharikasblogs.blogspot.com/p/how-to-write-simple-rpc-programme.html
+
+I copied his IDL.x file and then wrote this stupid Makefiles.
+
+
+
 Other notes:
 
 - pacman -S rpcsvc-proto tirpc
