@@ -1,0 +1,26 @@
+
+I wanted to know how this antiquated purposeless thingy worked. I started
+up a glusterd which started or required an rpcbind portmapper service.
+Then I noticed rpcinfo and started to wonder how you write services for the
+portmapper. Traditionally, apparently, people started with rpcgen.
+
+I suspect it's too antiquated to actually use, but I enjoyed making this
+Makefile(s). Note: I enjoy making Makefiles. rpcgen can generate a Makefile
+too -- that's probably the smarter choice if you really mean to use rpcgen
+for some reason.
+
+Other notes:
+
+- pacman -S rpcsvc-proto tirpc
+
+- the generated code doesn't actually do anything except binding to the
+  portmapper and portmapping …
+
+  - make IDL_server
+  - the program ID (456123789) is hardcoded in IDL.x along with the version (6)
+  - ./IDL_server & sleep 1 & rpcinfo -s | grep 456123789
+  - killall IDL_server
+
+- I suspect this isn't directly related to the way (eg) glusterfs does
+  things ... but perhaps it's closer than I think. It does seem to need
+  rpcbind.

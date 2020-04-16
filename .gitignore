@@ -1,0 +1,12 @@
+
+*.orig
+
+IDL.h
+IDL_xdr.c
+IDL_clnt.c
+IDL_svc.c
+IDL_client.c
+IDL_server.c
+
+IDL_server
+IDL_client
